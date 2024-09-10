@@ -1,0 +1,305 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/images/sthoksy-favicon-color.png">
+  <link rel="apple-touch-icon" href="/assets/images/sthoksy-favicon-color.png">
+  <title>Sthoksy Client Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.2.6" type="text/css" media="all">
+  <link href="/portal.css" rel="stylesheet">
+  <script src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js"></script>
+  <script src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js"></script>
+  <script src="https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1194.0" data-gr-ext-installed="">
+  <header>
+    <div class="container-fluid">
+      <div class="row first-row align-items-center">
+        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12 logo-section">
+          <img src="/assets/images/sthoksy-user-portal-logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12 text-right login-section">
+          <button class="btn btn-dashboard yellow-btn">IOT DASHBOARD</button>
+          <i class="fas fa-bell fa-lg"></i>
+          <i class="fas fa-user fa-lg"></i>
+        </div>
+      </div>
+      <div class="row second-row">
+        <nav class="col-12">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/sites.html">Sites/Year Planner</a></li>
+              <li class="nav-item"><a class="nav-link" href="/statutory.html">Statutory Documents</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="main-content">
+    <div class="two-in-row slide-left" id="controls-container">
+      <select id="site-selector" class="form-select form-select-lg blue-btn" aria-label=".form-select-lg select">
+        <option>SELECT SITE</option>
+        <option value="site-1">SITE 1</option>
+        <option value="site-2">SITE 2</option>
+        <option value="site-3">SITE 3</option>
+      </select>
+      <button id="request-call-back-btn" class="yellow-btn">REQUEST CALL BACK</button>
+    </div>
+    <div class="three-in-row">
+        <div id="first-container" class="slide-up">
+          <h2 class="dashboard-title">QUOTED WORKS</h2>
+          <div id="completed-works-donut-chart" class="chart"><svg width="325" height="325"><g transform="translate(162.5, 162.5)"><g class="arc"><path d="M-52.458,-132.493A142.5,142.5,0,0,1,0,-142.5L0,-92.5A92.5,92.5,0,0,0,-34.052,-86.004Z" style="fill: red;"></path><text transform="translate(-21.08039789089402,-110.50731570697748)" dy=".35em" font-size="14px" font-weight="600" fill="#fff" text-anchor="middle">6</text></g><g class="arc"><path d="M-83.759,115.285A142.5,142.5,0,0,1,-52.458,-132.493L-34.052,-86.004A92.5,92.5,0,0,0,-54.37,74.834Z" style="fill: orange;"></path><text transform="translate(-111.61290389787877,-14.099988775984233)" dy=".35em" font-size="14px" font-weight="600" fill="#fff" text-anchor="middle">34</text></g><g class="arc"><path d="M0,-142.5A142.5,142.5,0,1,1,-83.759,115.285L-54.37,74.834A92.5,92.5,0,1,0,0,-92.5Z" style="fill: green;"></path><text transform="translate(106.99385808320477,34.76441186718161)" dy=".35em" font-size="14px" font-weight="600" fill="#fff" text-anchor="middle">60</text></g><text text-anchor="middle" dy=".45em" font-size="34px" font-weight="600">11</text></g></svg></div>
+          <div class="keys">
+              <p><span class="green"></span> Completed</p>
+              <p><span class="orange"></span> In Progress</p>
+              <p><span class="red"></span> Awaiting Client Approval</p>
+          </div>
+        </div>
+
+        <div id="second-container" class="slide-up">
+          <h2 style="margin-left: 60px;">SCHEDULED MAINTENANCE</h2>
+          <div class="container mt-5">
+              <div id="calendar" class="calendar"><table><thead><tr><th colspan="7">September 2024</th></tr><tr><th>S</th><th>M</th><th class="today">T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead><tbody><tr><td class=" " data-date="2024-09-01">1 </td><td class=" " data-date="2024-09-02">2 </td><td class=" " data-date="2024-09-03">3 </td><td class=" event-circle" data-date="2024-09-04">4 <span class="event"></span></td><td class=" " data-date="2024-09-05">5 </td><td class=" " data-date="2024-09-06">6 </td><td class=" " data-date="2024-09-07">7 </td></tr><tr><td class=" " data-date="2024-09-08">8 </td><td class=" " data-date="2024-09-09">9 </td><td class="today " data-date="2024-09-10">10 </td><td class=" " data-date="2024-09-11">11 </td><td class=" " data-date="2024-09-12">12 </td><td class=" " data-date="2024-09-13">13 </td><td class=" " data-date="2024-09-14">14 </td></tr><tr><td class=" " data-date="2024-09-15">15 </td><td class=" " data-date="2024-09-16">16 </td><td class=" " data-date="2024-09-17">17 </td><td class=" " data-date="2024-09-18">18 </td><td class=" " data-date="2024-09-19">19 </td><td class=" " data-date="2024-09-20">20 </td><td class=" " data-date="2024-09-21">21 </td></tr><tr><td class=" " data-date="2024-09-22">22 </td><td class=" " data-date="2024-09-23">23 </td><td class=" " data-date="2024-09-24">24 </td><td class=" " data-date="2024-09-25">25 </td><td class=" " data-date="2024-09-26">26 </td><td class=" " data-date="2024-09-27">27 </td><td class=" " data-date="2024-09-28">28 </td></tr><tr><td class=" " data-date="2024-09-29">29 </td><td class=" " data-date="2024-09-30">30 </td></tr></tbody></table></div>
+              <button id="day7-schedule-btn" class="blue-btn full-btn">7 DAY MAINTENANCE SCHEDULE</button>
+              <button id="day30-schedule-btn" class="blue-btn full-btn">30 DAY MAINTENANCE SCHEDULE</button>
+          </div>
+          
+        </div>
+
+        <div id="third-container" class="slide-up">
+          <h2 class="dashboard-title" style="text-align: right;">STATUS OF STATUTORY COMPLIANCE</h2>
+          <div id="statutory-donut-chart" class="chart"><svg width="325" height="325"><g transform="translate(162.5, 162.5)"><g class="arc"><path d="M-111.411,-88.847A142.5,142.5,0,0,1,0,-142.5L0,-92.5A92.5,92.5,0,0,0,-72.319,-57.673Z" style="fill: red;"></path><text transform="translate(-48.811920650725305,-101.35899763902214)" dy=".35em" font-size="14px" font-weight="600" fill="#fff" text-anchor="middle">15</text></g><g class="arc"><path d="M-96.925,104.46A142.5,142.5,0,0,1,-111.411,-88.847L-72.319,-57.673A92.5,92.5,0,0,0,-62.916,67.807Z" style="fill: orange;"></path><text transform="translate(-112.18542718288276,8.407135528472676)" dy=".35em" font-size="14px" font-weight="600" fill="#fff" text-anchor="middle">25</text></g><g class="arc"><path d="M0,-142.5A142.5,142.5,0,1,1,-96.925,104.46L-62.916,67.807A92.5,92.5,0,1,0,0,-92.5Z" style="fill: green;"></path><text transform="translate(104.72329672247298,41.10086524121945)" dy=".35em" font-size="14px" font-weight="600" fill="#fff" text-anchor="middle">65</text></g><text text-anchor="middle" dy=".45em" font-size="34px" font-weight="600">15</text></g></svg></div>
+          <div class="keys">
+              <p><span class="green"></span> Completed</p>
+              <p><span class="orange"></span> Due In 30 Days</p>
+              <p><span class="red"></span> Overdue</p>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventModalLabel">Events on <span id="modalDate"></span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="eventList" class="list-group"><li class="list-group-item">No events</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="slide-right"><h3>Work With Sthoks, The Problem Solver.</h3></div>
+    <div id="footer-icons">
+      <div class="footer-icon slide-right"><img src="/assets/images/247.png" alt="ALL DAY, EVERY DAY CALL OUT ICON" class="logo"><span>ALL DAY, EVERY<br>DAY CALL OUT</span></div>
+      <div class="footer-icon slide-right"><img src="/assets/images/4hour-response.png" alt="FOUR-HOUR RESPONSE TIME ICON" class="logo"><span>FOUR-HOUR<br>RESPONSE TIME</span></div>
+      <div class="footer-icon slide-right"><img src="/assets/images/iot-solutions.png" alt="IOT SOLUTIONS ICON" class="logo"><span>IOT SOLUTIONS</span></div>
+      <div class="footer-icon slide-left"><img src="/assets/images/extensive-service-coverage.png" alt="EXTENSIVE SERVICE COVERAGE ICON" class="logo"><span>EXTENSIVE SERVICE<br>COVERAGE</span></div>
+      <div class="footer-icon slide-left"><img src="/assets/images/directly-employed-engineers.png" alt="DIRECTLY EMPLOYED ENGINEERS ICON" class="logo"><span>DIRECTLY EMPLOYED<br>ENGINEERS</span></div>
+      <div class="footer-icon slide-left"><img src="/assets/images/save-on-costs.png" alt="SAVE ON COSTS, IMPROVE EFFICIENCIES ICON" class="logo"><span>SAVE ON COSTS,<br>IMPROVE EFFICIENCIES</span></div>
+      <div class="footer-icon slide-left"><img src="/assets/images/esg.png" alt="ESG ICON" class="logo"><span>ESG</span></div>
+    </div>
+    <div id="footer-links">
+      <p class="slide-up"><a href="tel:0817402046">081 740 2046</a> <span>|</span> <a href="mailto:tcnhlangulela@gmail.com">tcnhlangulela@gmail.com</a> <span>|</span> <a href="https://github.com/sthoksdevs" target="_blank">https://github.com/sthoksdevs</a></p>
+    </div>
+    <div id="footer-copy" class="slide-left">© <span id="copy-year">2024</span> Thokozane Charles Nhlangulela</div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    var date = new Date();
+    var currYear = date.getFullYear();
+    $("#copy-year").text(currYear);
+
+    $(".navbar-toggler").click(function(){
+        $("#navbarNav").toggle();
+    });
+
+    // Function to create donut charts 
+    function createDonutChart(containerId, data, colors, text) {
+        const width = 325;
+        const height = 325;
+        const radius = Math.min(width, height) / 2;
+
+        const pie = d3.pie();
+        const arc = d3.arc().innerRadius(radius - 70).outerRadius(radius - 20);
+        const arcZero = d3.arc().innerRadius(radius - 70).outerRadius(0); // Initial state with zero radius
+        const arcLabel = d3.arc().innerRadius(radius - 50).outerRadius(radius - 50);
+
+        const svg = d3.select(`#${containerId}`)
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", `translate(${width / 2}, ${height / 2})`);
+
+        const g = svg.selectAll(".arc")
+            .data(pie(data))
+            .enter().append("g")
+            .attr("class", "arc");
+
+        g.append("path")
+            .attr("d", arcZero) // Set initial state to zero radius
+            .style("fill", (d, i) => colors[i])
+            .transition() // Add transition
+            .delay(00) // Delay the start of the transition by 1 second
+            .duration(600) // Animate over 1 second
+            .attr("d", arc); // Transition to full radius
+
+        g.append("text")
+            .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
+            .attr("dy", ".35em")
+            .attr("font-size", "14px")
+            .attr("font-weight", "600")
+            .attr("fill", "#fff")
+            .attr("text-anchor", "middle")
+            .text(d => d.data);
+
+        svg.append("text")
+            .attr("text-anchor", "middle")
+            .attr("dy", ".45em")
+            .attr("font-size", "34px")
+            .attr("font-weight", "600")
+            .text(text);
+    }
+
+    // Add delay before creating the donut charts
+    // Add the donut chart values here.
+    setTimeout(() => {
+        createDonutChart('completed-works-donut-chart', [6, 34, 60], ['red', 'orange', 'green'], "11");
+        createDonutChart('statutory-donut-chart', [15, 25, 65], ['red', 'orange', 'green'], "15");
+    }, 1000); // 1000 milliseconds = 1 second
+
+    // End function to create donut charts
+    
+    // Calendar JS
+    // Generate events for today and the next n days
+    const events = [];
+    const today = new Date();
+    for (let i = 0; i < 2; i++) {
+        const eventDate = new Date(today);
+        eventDate.setDate(today.getDate() + i);
+    
+        const formattedDate = `${eventDate.getFullYear()}-${String(eventDate.getMonth() + 1).padStart(2, '0')}-${String(eventDate.getDate()).padStart(2, '0')}`;
+    
+        events.push({ date: formattedDate, title: `Event 1`, time: '10:00 AM' });
+        events.push({ date: formattedDate, title: `Event 2`, time: '12:00 PM' });
+        events.push({ date: formattedDate, title: `Event 3`, time: '02:00 PM' });
+    } // Pre-populated events
+
+    function renderCalendar(month, year) {
+        const currentMonth = today.getMonth();
+        const currentYear = today.getFullYear();
+        const currentDay = today.getDate();
+
+        const firstDay = new Date(year, month).getDay();
+        const daysInMonth = 32 - new Date(year, month, 32).getDate();
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        let calendar = '<table>';
+        calendar += '<thead><tr>';
+        calendar += `<th colspan="7">${monthNames[month]} ${year}</th>`;
+        calendar += '</tr><tr>';
+        calendar += '<th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th>';
+        calendar += '</tr></thead><tbody><tr>';
+
+        for (let i = 0; i < firstDay; i++) {
+            calendar += '<td></td>';
+        }
+
+        for (let day = 1; day <= daysInMonth; day++) {
+            const date = new Date(year, month, day);
+            const formattedDate = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            const isToday = (date.toDateString() === today.toDateString()) ? 'today' : '';
+            const event = events.find(e => e.date === formattedDate);
+            const eventBadge = event ? `<span class="event"></span>` : '';
+            const eventCircle = event ? 'event-circle' : '';
+
+            calendar += `<td class="${isToday} ${eventCircle}" data-date="${formattedDate}">${day} ${eventBadge}</td>`;
+
+            if ((day + firstDay) % 7 === 0 && day < daysInMonth) {
+                calendar += '</tr><tr>';
+            }
+        }
+
+        calendar += '</tr></tbody></table>';
+        $('#calendar').html(calendar);
+
+        const todayDayOfWeek = today.getDay();
+        $('#calendar thead tr:nth-child(2) th').eq(todayDayOfWeek).addClass('today');
+    }
+
+    $('#calendar').on('click', 'td', function () {
+        const date = $(this).data('date');
+        if (date) {
+            $('#modalDate').text(date);
+            $('#eventModal').modal('show');
+            renderEventList(date);
+        }
+    });
+
+    function renderEventList(date) {
+        // Select the element with id 'eventList' and store it in the variable eventList
+        const eventList = $('#eventList');
+        
+        // Clear any existing content in the eventList
+        eventList.empty();
+
+        // Filter the events array to get events that match the specified date
+        const dayEvents = events.filter(e => e.date === date);
+
+        // If there are no events for the specified date, add a list item indicating "No events"
+        if (dayEvents.length === 0) {
+            eventList.append('<li class="list-group-item">No events</li>');
+        } else {
+            // Iterate through the filtered events
+            dayEvents.forEach(event => {
+                // Determine if the event date is in the past
+                const isPast = new Date(date) < today ? 'event-done' : '';
+                
+                // Create a list item for the event with the necessary classes and content
+                const eventItem = `<li class="list-group-item d-flex justify-content-between align-items-center ${isPast}">
+                    <span>${event.time} - ${event.title}</span>
+                    <div>
+                        <!--<i class="fas fa-pen mr-2 edit-event"></i>
+                        <i class="fas fa-check mr-2 mark-done"></i>-->
+                        <!--<i class="fas fa-times delete-event"></i>-->
+                    </div>
+                </li>`;
+                
+                // Append the created list item to the eventList
+                eventList.append(eventItem);
+            });
+        }
+    }
+
+    renderCalendar(today.getMonth(), today.getFullYear());
+
+    // Render events for today's date on page load
+    const todayFormattedDate = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+    renderEventList(todayFormattedDate);
+});
+
+  </script>
+
+</body></html>
